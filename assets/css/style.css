@@ -29,11 +29,22 @@
     font-weight: bolder;
 }
 
+#cod{
+    cursor: pointer;
+}
+
 #footer{
     margin-top: 39.9vh;
 }
 #footer2{
     margin-top: auto;
+    
+   
+}
+#footer3{
+    margin-top: auto;
+    position: relative;
+    top: 1.3%;
     
    
 }
@@ -141,10 +152,50 @@ body{
     white-space: nowrap;  
 }
 
-#socoreCard{
-    height: 50vh;
+#scoreForm{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 10vh;
+}
+
+#scoreForm{
+   
+}
+#submitButon{
     align-self: center;
-    justify-self: center;
+}
+
+#socoreCard{
+    top: 4rem;
+    position: relative;
+   display: flex;
+   width: 100%;
+   flex-direction: column;
+   justify-content: center;
+   white-space: wrap;
+}
+
+#socoreCard h1 {
+    padding-bottom: 1%;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+#socoreCard h2 {
+    padding-bottom: 1%;
+    font-size: xx-large;
+    font-weight: lighter;
+}
+
+#butCont{
+    display: flex;
+    width: 178px;
+    height: 40px;
+    flex-direction: row;
+    justify-content: center;
 }
 
 @media only screen and (max-width: 767px) {

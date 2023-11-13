@@ -50,12 +50,12 @@ const allQuestions = [
 ];
 
 function selectQuestion(){
-    preguunta.innerHTML = allQuestions[numPregunta].Q;
+    preguunta.textContent = allQuestions[numPregunta].Q;
     preguunta.style.color = "green";
-    btn1.innerHTML = allQuestions[numPregunta].A[0].answer;
-    btn2.innerHTML = allQuestions[numPregunta].A[1].answer;
-    btn3.innerHTML = allQuestions[numPregunta].A[2].answer;
-    btn4.innerHTML = allQuestions[numPregunta].A[3].answer;
+    btn1.textContent = allQuestions[numPregunta].A[0].answer;
+    btn2.textContent = allQuestions[numPregunta].A[1].answer;
+    btn3.textContent = allQuestions[numPregunta].A[2].answer;
+    btn4.textContent = allQuestions[numPregunta].A[3].answer;
 }
 
 selectQuestion();
@@ -76,7 +76,7 @@ function compareAnswer (btn){
     const value = btn.innerHTML
     let i = 0;
     let resp;
-    console.log(numPregunta)
+    // console.log(numPregunta)
         //console.log (value)
             //console.log("sis ossys" + allQuestions[numberQuestion].A[0].answer)
             if (value === allQuestions[numPregunta].A[0].answer){
@@ -94,21 +94,25 @@ function compareAnswer (btn){
 
             if (resp){
                 console.log("muy bein")
+                if(numPregunta<3){
+                    numPregunta++
+                }
+                flag++
             }
 
             else {
-                if(time>0){
+                if(time>=0){
                 time = time-25;
                 }
-                else{
-                    time = 0;
+                if(numPregunta<3){
+                    numPregunta++
                 }
+                flag++
             }
+            
             selectQuestion();
-            if(numPregunta<3){
-                numPregunta++
-            }
-            flag++
+           
+            
             console.log("hey " + flag)
             i++
         
@@ -123,15 +127,15 @@ function countdown() {
       time--;
       timer.innerHTML = "Timer:  " + time + " Seconds remaining";
 
-    //   if (time> 0 ){
-    //     audio.volume = .03
-    //     audio.play();
-    //   }
-    //   else {
-    //     audio.pause();
-    //   }
+      if (time> 0 ){
+        audio.volume = .03
+        audio.play();
+      }
+      else {
+        audio.pause();
+      }
   
-      if(time <= 0 || flag===5){
+      if(time <= 0 || flag==4){
         const newTime = time;
         sessionStorage.setItem('myData', newTime);
         clearInterval(timeInterval);
