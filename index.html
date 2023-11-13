@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding quiz
+    </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    
+</head>
+<header>
+<nav class="bg-white border-gray-200 dark:bg-gray-900" id = "navColor">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Coding Quiz!</span>
+        <img src="./assets/images/AlexLogo.png" class = "logoAlex" >
+
+  </div>
+</nav>
+</header>
+<body>
+    <main>
+      <section class="bg-white ">
+        <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
+            <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl ">Learning Made Fun!</h1>
+            <p class="mb-8 text-lg font-normal text-gray-500 lg:text-xl sm:px-16 lg:px-48 ">We know taht starting to code can be stresfull, all these new terms just seem so alien, bit that's why we're here to make everything easier for you so you can learn while you're haviing fun! </p>
+            <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
+                <a href="./assets/pages/game.html" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                    Start playing!
+                    <svg class="w-3.5 h-3.5 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+                    </svg>
+                </a>
+
+            </div class = "relative flex min-h-scree flex-col items-center justify-center overflow-hidden" bg-gray-50 py-6 sm:py-12>
+            <div>
+              <label for ="tw-modal" id ="htp" class = "inline-flex justify-center items-center py-3 px-5 sm:ms-4 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100  dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">How to play!</label>
+            </div>
+            <input type ="checkbox" id="tw-modal" class ="peer fixed appearance-none opacity-0">
+            <label for ="tw-modal" class ="pointer-events-none invisible fixed inset-0 flex cursor-pointer items-center justify-center overflow-hidden overscroll-contain bg-slate-700/30 opacity-0 transition-all duration-200 ease-in-out peer-checked:pointer-events-auto peer-checked:visible peer-checked:opacity-100 peer-checked:[&>*]:translate-y-0 peer-checked:[&>*]:scale-100 ">
+              <label class="max-h-[calc(100vh - 5em)] h-fit max-w-lg scale-90 overflow-y-auto overscroll-contain rounded-md bg-white p-6 text-black shadow-2xl transition" for ="">
+                <h1 class="rulesText">Rules</h1>
+                <p class = >
+                  <ol class ="modalRules">
+                    <li>The goal of the game is to answer a series of code-related questions.</li>
+                    <li>Clicking the "Start" button initiates the game.</li>
+                    <li>A timer starts when the game begins.</li>
+                    <li>Upon starting, you are presented with a question.</li>
+                    <li>When you answer a question, you are immediately presented with another question.</li>
+                    <li>If you answer a question incorrectly, time is subtracted from the clock.</li>
+                    <li>The game is over when either all questions are answered or the timer reaches 0.</li>
+                    <li>After the game ends, you can save your initials and your score.</li>
+                    <li>Your score may be based on the number of correct answers and the time remaining on the clock.</li>
+                    <li>After the game, you might see your final score, the correct answers, or additional feedback.</li>
+                </ol>
+                </p>
+
+              </label>
+            </label>
+          </div>
+                
+          </div>
+      </div>
+  </section>
+  <footer class="bg-white rounded-lg shadow m-4 dark:bg-gray-800" id = "footer">
+    <div class="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
+      <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">Flowbite™</a>. All Rights Reserved.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+        <li>
+            <a href="#" class="hover:underline me-4 md:me-6">About</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Privacy Policy</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline me-4 md:me-6">Licensing</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline">Contact</a>
+        </li>
+    </ul>
+    </div>
+  </footer>
+    </main>    
+</body>
+
+</html>
